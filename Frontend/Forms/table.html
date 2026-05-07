@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        background-color: skyblue;
+    }
+</style>
+<body>
+    <h1 align="center">Candidate Information</h1>
+    <table border="2">
+        <tr>
+            <td>Name:*</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td> password:*</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Phone Number:*</td>
+            <td><input type="tel" min="10"></td>
+        </tr>
+        <tr>
+            <td>Gender:*</td>
+            <td><input type="radio"><label for="male">Male</label>
+            <input type="radio"><label for="Female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Birth:*</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Email:*</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>Highest Qualification:*</td>
+            <td><select name="pref" aria-placeholder="Select your Highest Qualification">
+            <option value="ssc">SSC</option>
+            <option value="Secondary Education">Secondary Education</option>
+             <option value="Graduation"> Post-Graduation</option>
+            <option value="Graduation">Graduation</option>
+        </select></td>
+        </tr>
+        <tr>
+            <td>Courses Interested in:*</td>
+            <td><input type="checkbox"><label for="Angular js">Angular js</label>
+            <input type="checkbox"><label for="Jquery">Jquery</label>
+            <input type="checkbox"><label for="Java">Java</label>
+            <input type="checkbox"><label for="HTML5">HTML5</label>
+            <input type="checkbox"><label for="CSS3">CSS3</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Comments:(Mention External Certifications if any)*</td>
+            <td><textarea name="address" rows="5" cols="40"></textarea></td>
+        </tr>
+        <tr>
+            <td>Upload Degree/External Certifications:*</td>
+            <td><input type="file" placeholder="upload your degree"></td>
+        </tr>
+        <tr>
+            <td></td>
+         <td><input type="submit" value="save">
+            <input type="button" value="Clear">
+        </td>
+        </tr>
+    </table>
+</body>
+</html>
