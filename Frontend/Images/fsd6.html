@@ -1,0 +1,58 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Thumnail Image Gallery</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .gallery{
+                display:grid;
+                grid-template-columns: repeat(autofill,minmax(200px,1fr));
+                gap:10px;
+                justify-items: center;
+            }
+            .gallery a img{
+                width:200px;
+                height:200px;
+                border:10px solid #ccc;
+                border-radius: 10px;
+                transition:transform 0.5s,border-color 0.5s;
+            }
+            .gallery a img:hover {
+                transform:scale(1.1);
+                border-color:#000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Thumbnail Image Gallery</h1>
+        <div class="gallery">
+            <!--Thumbnail 1-->
+            <a href="D:\subjects\fsad_lab\images"target="_blank">
+                <img src="tommy.jpg">
+            </a>
+             <!--Thumbnail 2-->
+             <a href="D:\subjects\fsad_lab\images"target="_blank">
+                <img src="tommy.jpg">
+                </a>
+                 <!--Thumbnail 3-->
+             <a href="D:\subjects\fsad_lab\images"target="_blank">
+                <img src="tommy.jpg">
+             </a>
+                  <!--Thumbnail 4-->
+                 <a href="D:\subjects\fsad_lab\images"target="_blank">
+                    <img src="tommy.jpg">
+                </a>
+                     <!--Thumbnail 5-->
+                    <a href="D:\subjects\fsad_lab\images"target="_blank">
+                        <img src="tommy.jpg">
+                    </a>
+        </div>
+    </body>
+</html>
